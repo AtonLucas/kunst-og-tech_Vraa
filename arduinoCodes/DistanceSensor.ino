@@ -1,4 +1,3 @@
-const int buzzer = 8;
 const int trig_pin = 9;
 const int echo_pin = 10;
 float timing = 0.0;
@@ -8,10 +7,8 @@ void setup()
 {
   pinMode(echo_pin, INPUT);
   pinMode(trig_pin, OUTPUT);
-  pinMode(buzzer, OUTPUT);
   
   digitalWrite(trig_pin, LOW);
-  digitalWrite(buzzer, LOW);
     
   Serial.begin(9600);
 }
@@ -34,12 +31,4 @@ void loop()
   Serial.print(distance / 2.54);
   Serial.println("in");
   
-    
-  if (distance <= 50) {
-  	tone(buzzer, 500);
-  } else {
-  	noTone(buzzer);
-  }
-  
-  delay(100);
 }
