@@ -1,3 +1,1 @@
-This folder contains the following:
-
-* PDF's containing pictures and examples of wiering for the arduino
+This folder contains pdf's and guides for the classes
